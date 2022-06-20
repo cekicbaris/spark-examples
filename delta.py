@@ -1,7 +1,5 @@
 import pyspark
-from delta import *
 from pyspark.sql import SparkSession
-
 
 spark =  SparkSession.getOrCreate()
 
