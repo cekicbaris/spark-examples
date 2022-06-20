@@ -6,7 +6,7 @@ spark =  ( SparkSession.builder
          .getOrCreate()  
         )
 
-url = "s3a://co-datazone-public/SalesRecords/SalesRecords.csv"
+url = "s3a://co-datazone-public/SalesRecords/1000 Sales Records.csv"
 
 df = spark.read.format("csv").option("header", "true").option("sep", ",").load(url)
 df.show()
